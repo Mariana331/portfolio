@@ -1,0 +1,27 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+    padding: 0;
+  }
+}
+
+/* 
+Background	#FAF7F2
+Основний текст	#3B3531
+Другорядний текст	#716963
+Powder button	#E6D0C3
+Accent	#CFAF9F
+Border	#E8DED6
+White cards	#FFFFFF */
