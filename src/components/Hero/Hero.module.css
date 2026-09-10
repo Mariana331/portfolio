@@ -1,0 +1,76 @@
+.hero {
+  background: #faf7f2;
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.hero_left {
+  display: flex;
+  max-width: 650px;
+}
+
+.left_opportunity {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.opportunity_icon {
+  fill: #3b3531;
+  width: 30px;
+  height: 30px;
+}
+
+.opportunity_text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #3b3531;
+}
+
+.title {
+}
+
+.hero_mari {
+}
+
+.hero_ko {
+}
+
+.description {
+}
+
+.description_span {
+}
+
+.description_span_one {
+}
+
+.hero_btn {
+  display: flex;
+}
+
+.btn_view {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 999px;
+}
+
+.view_icon {
+  fill: #3b3531;
+}
+
+.btn_download {
+  border-radius: 999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero_right {
+  max-width: 650px;
+  display: flex;
+}

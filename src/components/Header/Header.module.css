@@ -5,6 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -29,7 +30,7 @@
 }
 
 .logo:hover .logo_icon {
-  fill: #3b3531;
+  fill: #b89482;
   transform: rotate(15deg);
 }
 
@@ -99,6 +100,13 @@
 .burger {
   fill: #3b3531;
 }
+.nav {
+  display: none;
+}
+
+.header_button {
+  display: none;
+}
 
 @media screen and (min-width: 768px) {
 }
@@ -106,5 +114,13 @@
 @media screen and (min-width: 1240px) {
   .menu {
     display: none;
+  }
+
+  .nav {
+    display: flex;
+  }
+
+  .header_button {
+    display: flex;
   }
 }

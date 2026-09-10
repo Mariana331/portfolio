@@ -20,8 +20,17 @@
     d="M16 1C16 1 17.1 10.9 21.2 14.2C24.1 16.5 31 16 31 16C31 16 24.1 15.5 21.2 17.8C17.1 21.1 16 31 16 31C16 31 14.9 21.1 10.8 17.8C7.9 15.5 1 16 1 16C1 16 7.9 16.5 10.8 14.2C14.9 10.9 16 1 16 1Z"
   />
 </symbol>
-<symbol id="icon-paragraph" viewBox="0 0 32 32">
-<path d="M0 2h32v4h-32zM0 8h32v4h-32zM0 14h32v4h-32zM0 20h32v4h-32zM0 26h32v4h-32z"></path>
+<symbol id="icon-menu" viewBox="0 0 44 32">
+<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
+<path d="M31 14l6 6 6-6z"></path>
+</symbol>
+<symbol id="icon-x" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M24 8l-16 16"></path>
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M8 8l16 16"></path>
+</symbol>
+<symbol id="icon-point" viewBox="0 0 32 32">
+<path fill="#3b3531" style="fill: var(--color1, #3b3531)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path fill="#3b3531" style="fill: var(--color2, #3b3531)" d="M26.666 16c0 5.891-4.776 10.667-10.667 10.667s-10.667-4.776-10.667-10.667c0-5.891 4.776-10.667 10.667-10.667s10.667 4.776 10.667 10.667z"></path>
 </symbol>
 </defs>
 </svg>

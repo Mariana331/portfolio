@@ -1,4 +1,97 @@
 .mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.logo {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: start;
+  align-items: center;
+  gap: 4px;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 500;
+  color: #3b3531;
+  margin-bottom: 40px;
+}
+
+.logo_icon {
+  width: 30px;
+  height: 30px;
+  fill: #cfaf9f;
+  transition:
+    fill 0.3s ease,
+    transform 0.3s ease;
+}
+
+.logo:hover .logo_icon {
+  fill: #b89482;
+  transform: rotate(15deg);
+}
+
+.btn_close {
+  background-color: transparent;
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+.close {
+  stroke: #3b3531;
+}
+
+.nav {
+  margin-bottom: 40px;
+}
+
+.nav_list {
+  display: flex;
+  gap: 32px;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav_link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #716963;
+}
+
+.header_button {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: #3b3531;
+  background-color: #e6d0c3;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 999px;
+  border: none;
+  height: 46px;
+}
+
+.sparkle {
+  fill: #cfaf9f;
+  transition:
+    transform 0.3s ease,
+    fill 0.3s ease;
+}
+
+.sparkle:hover {
+  fill: #b89482;
+  transform: rotate(15deg) scale(1.08);
 }
 
 @media screen and(max-width:768px) {

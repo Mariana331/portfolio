@@ -22,7 +22,9 @@ export default function Header() {
         <svg className={css.logo_icon} width={30} height={30}>
           <use href="/sprite.svg#icon-flower" />
         </svg>
-        <p className={css.logo_text}>Mariana.</p>
+        <Link to="/" className={css.logo_text}>
+          Mariana.
+        </Link>
       </div>
       <nav className={css.nav}>
         <ul className={css.nav_list}>
@@ -72,12 +74,17 @@ export default function Header() {
         onClick={() => setOpenModal(true)}
       >
         <svg className={css.burger} width={30} height={30}>
-          <use href="/sprite.svg#icon-paragraph"></use>
+          <use href="/sprite.svg#icon-menu"></use>
         </svg>
       </button>
-      <Modal onClose={() => setOpenModal(false)}>
-        <MobileMenu onClose={() => setOpenModal(false)} isOpen={isOpenModal} />
-      </Modal>
+      {isOpenModal && (
+        <Modal onClose={() => setOpenModal(false)}>
+          <MobileMenu
+            onClose={() => setOpenModal(false)}
+            isOpen={isOpenModal}
+          />
+        </Modal>
+      )}
     </div>
   );
 }
