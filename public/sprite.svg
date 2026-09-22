@@ -32,5 +32,26 @@
 <path fill="#3b3531" style="fill: var(--color1, #3b3531)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
 <path fill="#3b3531" style="fill: var(--color2, #3b3531)" d="M26.666 16c0 5.891-4.776 10.667-10.667 10.667s-10.667-4.776-10.667-10.667c0-5.891 4.776-10.667 10.667-10.667s10.667 4.776 10.667 10.667z"></path>
 </symbol>
+  <symbol id="icon-next" viewBox="0 0 32 32">
+    <rect width="32" height="32" rx="6" fill="#000000" style="fill: var(--color-bg, #000000)"/>
+    <path fill="#ffffff" style="fill: var(--color-fg, #ffffff)" d="M22 10v12h-2.2V13.6L12.2 22H10V10h2.2v8.4L19.8 10H22z"/>
+  </symbol>
+  <symbol id="icon-react" viewBox="0 0 32 32">
+    <circle cx="16" cy="16" r="2.5" fill="#61dafb" style="fill: var(--color-react, #61dafb)"/>
+    <g stroke="#61dafb" stroke-width="1.2" fill="none" style="stroke: var(--color-react, #61dafb)">
+      <ellipse cx="16" cy="16" rx="12" ry="4.5"/>
+      <ellipse cx="16" cy="16" rx="12" ry="4.5" transform="rotate(60 16 16)"/>
+      <ellipse cx="16" cy="16" rx="12" ry="4.5" transform="rotate(120 16 16)"/>
+    </g>
+  </symbol>
+  <symbol id="icon-ts" viewBox="0 0 32 32">
+    <rect width="32" height="32" rx="6" fill="#3178c6" style="fill: var(--color-bg, #3178c6)"/>
+    <path fill="#ffffff" style="fill: var(--color-fg, #ffffff)" d="M8 10h4v12H8V10zm7 0h10v3h-3.5v9h-3v-9H15V10z"/>
+  </symbol>
+  <symbol id="icon-node" viewBox="0 0 32 32">
+    <rect width="32" height="32" rx="6" fill="#339933" style="fill: var(--color-bg, #339933)"/>
+    <path fill="#ffffff" style="fill: var(--color-fg, #ffffff)" d="M16 6l7.5 4.3v8.7L16 23.3l-7.5-4.3v-8.7L16 6zm0 2.5L10.5 11v6.1L16 20.5l5.5-3.4V11L16 8.5z"/>
+  </symbol>
+
 </defs>
 </svg>
