@@ -5,14 +5,8 @@
   display: flex;
   align-items: center;
   overflow: hidden;
-}
-
-.container {
-  width: 100%;
-  max-width: 375px;
   margin: 0 auto;
-  padding: 56px 20px 80px;
-  display: flex;
+  padding: 28px 0 30px;
   flex-direction: column;
 }
 
@@ -25,7 +19,7 @@
   display: flex;
   align-items: center;
   gap: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 30px;
 }
 
 .opportunity_icon {
@@ -45,31 +39,32 @@
 }
 
 .title {
-  margin: 0 0 24px;
+  margin-bottom: 9px;
   color: #3b3531;
   font-family: "Cormorant Garamond", serif;
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 400;
   line-height: 0.95;
   letter-spacing: -0.02em;
 }
 
 .hero_mari {
-  font-size: 54px;
+  font-size: 58px;
   font-weight: 500;
 }
 
 .hero_ko {
   color: #b89482;
+  font-style: italic;
   font-size: 44px;
 }
 
 .description {
   max-width: 520px;
-  margin: 0 0 18px;
+  margin-bottom: 22px;
   color: #3b3531;
   font-family: "Manrope", sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   line-height: 1.05;
 }
@@ -80,10 +75,10 @@
 
 .description_one {
   max-width: 430px;
-  margin: 0 0 24px;
+  margin-bottom: 40px;
   color: #716963;
   font-family: "Manrope", sans-serif;
-  font-size: 13px;
+  font-size: 11px;
   line-height: 1.5;
 }
 
@@ -144,8 +139,6 @@
   display: flex;
   align-items: center;
   gap: 26px;
-  margin: 0;
-  padding: 0;
   list-style: none;
 }
 
@@ -197,28 +190,19 @@
 
 .techCard {
   position: absolute;
-
   display: flex;
   align-items: center;
   gap: 7px;
-
   padding: 8px 12px;
-
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 999px;
-
   background: rgba(255, 255, 255, 0.78);
-
   color: #3b3531;
-
   font-family: "Manrope", sans-serif;
   font-size: 10px;
   font-weight: 600;
-
   white-space: nowrap;
-
   box-shadow: 0 10px 30px rgba(59, 53, 49, 0.08);
-
   backdrop-filter: blur(10px);
 }
 
@@ -252,18 +236,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     min-height: calc(100vh - 88px);
-  }
-
-  .container {
-    max-width: 768px;
-
-    padding: 70px 32px 90px;
-
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    gap: 30px;
+    padding: 35px 0 140px;
   }
 
   .hero_left {
@@ -271,7 +244,7 @@
   }
 
   .left_opportunity {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .opportunity_text {
@@ -279,12 +252,12 @@
   }
 
   .title {
-    font-size: 34px;
-    margin-bottom: 25px;
+    font-size: 40px;
+    margin-bottom: 12px;
   }
 
   .hero_mari {
-    font-size: 62px;
+    font-size: 65px;
   }
 
   .hero_ko {
@@ -292,7 +265,7 @@
   }
 
   .description {
-    font-size: 27px;
+    font-size: 24px;
     line-height: 1.05;
   }
 
@@ -322,12 +295,8 @@
 }
 
 @media screen and (min-width: 1240px) {
-  .container {
-    max-width: 1240px;
-
-    padding: 70px 40px 80px;
-
-    gap: 70px;
+  .hero {
+    padding: 44px 0 167px;
   }
 
   .hero_left {
@@ -343,34 +312,27 @@
   }
 
   .title {
-    font-size: 36px;
-    margin-bottom: 28px;
+    font-size: 48px;
+    margin-bottom: 22px;
   }
 
   .hero_mari {
-    font-size: 70px;
+    font-size: 88px;
   }
 
   .hero_ko {
-    font-size: 52px;
+    font-size: 66px;
   }
 
   .description {
     max-width: 550px;
-
     font-size: 22px;
-    line-height: 1.15;
-
-    margin-bottom: 18px;
   }
 
   .description_one {
     max-width: 450px;
-
-    font-size: 13px;
     line-height: 1.5;
-
-    margin-bottom: 25px;
+    margin-bottom: 33px;
   }
 
   .hero_btn {
@@ -381,7 +343,6 @@
   .btn_download {
     min-height: 46px;
     padding: 0 20px;
-
     font-size: 12px;
   }
 
