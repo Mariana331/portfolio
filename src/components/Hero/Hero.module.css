@@ -1,12 +1,11 @@
-.hero {
-  background: #faf7f2;
+.hero_container {
   position: relative;
   min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
   overflow: hidden;
   margin: 0 auto;
-  padding: 28px 0 30px;
+  padding: 28px 0;
   flex-direction: column;
 }
 
@@ -234,9 +233,9 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
+  .hero_container {
     min-height: calc(100vh - 88px);
-    padding: 35px 0 140px;
+    padding: 35px 0;
   }
 
   .hero_left {
@@ -295,8 +294,8 @@
 }
 
 @media screen and (min-width: 1240px) {
-  .hero {
-    padding: 44px 0 167px;
+  .hero_container {
+    padding: 44px 0;
   }
 
   .hero_left {

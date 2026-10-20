@@ -11,7 +11,7 @@ export default function MobileMenu({ onClose, isOpen }: MobileMenuProps) {
   return (
     <div className={css.mobile}>
       <div className={css.logo}>
-        <svg className={css.logo_icon} width={30} height={30}>
+        <svg className={css.logo_icon} width={25} height={25}>
           <use href="/sprite.svg#icon-flower" />
         </svg>
         <Link to="/" className={css.logo_text}>
@@ -57,13 +57,22 @@ export default function MobileMenu({ onClose, isOpen }: MobileMenuProps) {
           </li>
         </ul>
       </nav>
+      <p className={css.mobile_text}>Available for new opportunities</p>
       <div className={css.header_button}>
         <button className={css.button} onClick={onClose}>
           Let&apos;s talk
         </button>
-        <svg className={css.sparkle} width={30} height={30}>
+        <svg className={css.sparkle} width={25} height={25}>
           <use href="/sprite.svg#icon-sparkle"></use>
         </svg>
+      </div>
+      <div className={css.mobile_end}>
+        <svg className={css.sparkle_end} width={25} height={25}>
+          <use href="/sprite.svg#icon-sparkle"></use>
+        </svg>
+        <p className={css.text_end}>
+          Let's build something beautiful together.
+        </p>
       </div>
     </div>
   );

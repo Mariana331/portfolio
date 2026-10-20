@@ -1,3 +1,23 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .container {
+    max-width: 1240px;
+    padding: 0 100px;
+  }
+}
+
 body {
   margin: 0;
   background-color: #faf7f2;

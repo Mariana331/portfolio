@@ -1,10 +1,11 @@
-.header {
+.header_container {
   padding: 20px 0;
   margin: 0 auto;
   height: 88px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-sizing: border-box;
 }
 
 .logo {
@@ -108,8 +109,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .header {
-    padding: 20px 0px 32px;
+  .header_container {
+    padding: 20px 0px;
   }
 
   .logo {
@@ -118,8 +119,8 @@
 }
 
 @media screen and (min-width: 1240px) {
-  .header {
-    padding: 22px 0px 37px;
+  .header_container {
+    padding: 22px 0px;
   }
 
   .logo {

@@ -18,73 +18,81 @@ export default function Header() {
 
   return (
     <div className={css.header}>
-      <div className={css.logo}>
-        <svg className={css.logo_icon} width={30} height={30}>
-          <use href="/sprite.svg#icon-flower" />
-        </svg>
-        <Link to="/" className={css.logo_text}>
-          Mariana.
-        </Link>
-      </div>
-      <nav className={css.nav}>
-        <ul className={css.nav_list}>
-          <li className={`${css.nav_item} ${isHome ? css.active : ""} `}>
-            <Link className={css.nav_link} to="/home">
-              Home
+      <div className="container">
+        <div className={css.header_container}>
+          <div className={css.logo}>
+            <svg className={css.logo_icon} width={25} height={25}>
+              <use href="/sprite.svg#icon-flower" />
+            </svg>
+            <Link to="/" className={css.logo_text}>
+              Mariana.
             </Link>
-          </li>
-          <li className={`${css.nav_item} ${isAbout ? css.active : ""} `}>
-            <Link className={css.nav_link} to="/about">
-              About
-            </Link>
-          </li>
-          <li className={`${css.nav_item} ${isProducts ? css.active : ""} `}>
-            <Link className={css.nav_link} to="/products">
-              Products
-            </Link>
-          </li>
-          <li className={`${css.nav_item} ${isSkills ? css.active : ""} `}>
-            <Link className={css.nav_link} to="/skills">
-              Skills
-            </Link>
-          </li>
-          <li
-            className={`${css.nav_item} ${isTestimonials ? css.active : ""} `}
+          </div>
+          <nav className={css.nav}>
+            <ul className={css.nav_list}>
+              <li className={`${css.nav_item} ${isHome ? css.active : ""} `}>
+                <Link className={css.nav_link} to="/home">
+                  Home
+                </Link>
+              </li>
+              <li className={`${css.nav_item} ${isAbout ? css.active : ""} `}>
+                <Link className={css.nav_link} to="/about">
+                  About
+                </Link>
+              </li>
+              <li
+                className={`${css.nav_item} ${isProducts ? css.active : ""} `}
+              >
+                <Link className={css.nav_link} to="/products">
+                  Products
+                </Link>
+              </li>
+              <li className={`${css.nav_item} ${isSkills ? css.active : ""} `}>
+                <Link className={css.nav_link} to="/skills">
+                  Skills
+                </Link>
+              </li>
+              <li
+                className={`${css.nav_item} ${isTestimonials ? css.active : ""} `}
+              >
+                <Link className={css.nav_link} to="/testimonials">
+                  Testimonials
+                </Link>
+              </li>
+              <li
+                className={`${css.nav_item} ${isContacts ? css.active : ""} `}
+              >
+                <Link className={css.nav_link} to="/contacts">
+                  Contacts
+                </Link>
+              </li>
+            </ul>
+          </nav>
+          <div className={css.header_button}>
+            <button className={css.button}>Let&apos;s talk</button>
+            <svg className={css.sparkle} width={30} height={30}>
+              <use href="/sprite.svg#icon-sparkle"></use>
+            </svg>
+          </div>
+          <button
+            className={css.menu}
+            type="button"
+            onClick={() => setOpenModal(true)}
           >
-            <Link className={css.nav_link} to="/testimonials">
-              Testimonials
-            </Link>
-          </li>
-          <li className={`${css.nav_item} ${isContacts ? css.active : ""} `}>
-            <Link className={css.nav_link} to="/contacts">
-              Contacts
-            </Link>
-          </li>
-        </ul>
-      </nav>
-      <div className={css.header_button}>
-        <button className={css.button}>Let&apos;s talk</button>
-        <svg className={css.sparkle} width={30} height={30}>
-          <use href="/sprite.svg#icon-sparkle"></use>
-        </svg>
+            <svg className={css.burger} width={30} height={30}>
+              <use href="/sprite.svg#icon-menu"></use>
+            </svg>
+          </button>
+          {isOpenModal && (
+            <Modal onClose={() => setOpenModal(false)}>
+              <MobileMenu
+                onClose={() => setOpenModal(false)}
+                isOpen={isOpenModal}
+              />
+            </Modal>
+          )}
+        </div>
       </div>
-      <button
-        className={css.menu}
-        type="button"
-        onClick={() => setOpenModal(true)}
-      >
-        <svg className={css.burger} width={30} height={30}>
-          <use href="/sprite.svg#icon-menu"></use>
-        </svg>
-      </button>
-      {isOpenModal && (
-        <Modal onClose={() => setOpenModal(false)}>
-          <MobileMenu
-            onClose={() => setOpenModal(false)}
-            isOpen={isOpenModal}
-          />
-        </Modal>
-      )}
     </div>
   );
 }
