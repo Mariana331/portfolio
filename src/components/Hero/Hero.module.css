@@ -169,7 +169,7 @@
   position: relative;
   width: 100%;
   max-width: 320px;
-  margin: 50px auto 0;
+  margin: auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,64 +178,52 @@
 .photo_wrapper {
   position: relative;
   width: 260px;
-  height: 335px;
+  height: 290px;
   background-image: url("/Hero/photo.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  border-radius: 130px 130px 40px 40px;
+  border-radius: 175px 175px 175px 175px;
+}
+
+.icon_box {
+  position: absolute;
+  gap: 7px;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  top: 50px;
+  left: 0;
 }
 
 .techCard {
-  position: absolute;
+  gap: 7px;
   display: flex;
   align-items: center;
-  gap: 7px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   border: 1px solid rgba(255, 255, 255, 0.7);
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.78);
   color: #3b3531;
   font-family: "Manrope", sans-serif;
-  font-size: 10px;
-  font-weight: 600;
+  font-size: 9px;
+  font-weight: 500;
   white-space: nowrap;
   box-shadow: 0 10px 30px rgba(59, 53, 49, 0.08);
   backdrop-filter: blur(10px);
 }
 
 .icon_tech {
-  width: 19px;
-  height: 19px;
-}
-
-.icon_react {
-  top: 45px;
-  left: 0;
-}
-
-.icon_next {
-  top: 125px;
-  right: -5px;
-}
-
-/* TypeScript */
-.icon_type {
-  top: 205px;
-  left: -5px;
-}
-
-/* Node */
-.icon_node {
-  bottom: 45px;
-  right: 0;
+  width: 10px;
+  height: 10px;
 }
 
 @media screen and (min-width: 768px) {
   .hero_container {
     min-height: calc(100vh - 88px);
     padding: 35px 0;
+    flex-direction: row;
   }
 
   .hero_left {
@@ -278,18 +266,32 @@
   }
 
   .hero_right {
-    max-width: 320px;
+    max-width: 390px;
     margin: 0;
     flex-shrink: 0;
   }
 
   .photo_wrapper {
-    width: 285px;
+    width: 390px;
     height: 370px;
+  }
+
+  .icon_box {
+    gap: 10px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    top: 70px;
+    left: 0;
   }
 
   .techCard {
     font-size: 11px;
+  }
+
+  .icon_tech {
+    width: 15px;
+    height: 15px;
   }
 }
 
@@ -357,15 +359,21 @@
   }
 
   .hero_right {
-    width: 480px;
-    max-width: 480px;
+    max-width: 600px;
   }
 
   .photo_wrapper {
-    width: 350px;
+    width: 600px;
     height: 455px;
+  }
 
-    border-radius: 175px 175px 50px 50px;
+  .icon_box {
+    gap: 25px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    top: 60px;
+    left: 0;
   }
 
   .techCard {
@@ -376,25 +384,5 @@
   .icon_tech {
     width: 20px;
     height: 20px;
-  }
-
-  .icon_react {
-    top: 70px;
-    left: 0;
-  }
-
-  .icon_next {
-    top: 150px;
-    right: 0;
-  }
-
-  .icon_type {
-    top: 230px;
-    left: -5px;
-  }
-
-  .icon_node {
-    bottom: 65px;
-    right: 5px;
   }
 }

@@ -16,7 +16,7 @@ export default function Hero() {
               </p>
             </div>
             <h1 className={css.title}>
-              Hi, I am<br></br>
+              Hi, I&apos;m<br></br>
               <span className={css.hero_mari}>Mariana</span>
               <br></br>
               <span className={css.hero_ko}>Koval</span>
@@ -87,29 +87,31 @@ export default function Hero() {
 
           <div className={css.hero_right}>
             <div className={css.photo_wrapper}></div>
-            <div className={css.techCard}>
-              <svg className={`${css.icon_tech} ${css.icon_react}`}>
-                <use href="/sprite.svg#icon-react"></use>
-              </svg>
-              React
-            </div>
-            <div className={css.techCard}>
-              <svg className={`${css.icon_tech} ${css.icon_next}`}>
-                <use href="/sprite.svg#icon-next"></use>
-              </svg>
-              Next.js
-            </div>
-            <div className={css.techCard}>
-              <svg className={`${css.icon_tech} ${css.icon_type}`}>
-                <use href="/sprite.svg#icon-ts"></use>
-              </svg>
-              TypeScript
-            </div>
-            <div className={css.techCard}>
-              <svg className={`${css.icon_tech} ${css.icon_node}`}>
-                <use href="/sprite.svg#icon-node"></use>
-              </svg>
-              Node.js
+            <div className={css.icon_box}>
+              <div className={css.techCard}>
+                <svg className={`${css.icon_tech} ${css.icon_react}`}>
+                  <use href="/sprite.svg#icon-react"></use>
+                </svg>
+                React
+              </div>
+              <div className={css.techCard}>
+                <svg className={`${css.icon_tech} ${css.icon_next}`}>
+                  <use href="/sprite.svg#icon-next"></use>
+                </svg>
+                Next.js
+              </div>
+              <div className={css.techCard}>
+                <svg className={`${css.icon_tech} ${css.icon_type}`}>
+                  <use href="/sprite.svg#icon-ts"></use>
+                </svg>
+                TypeScript
+              </div>
+              <div className={css.techCard}>
+                <svg className={`${css.icon_tech} ${css.icon_node}`}>
+                  <use href="/sprite.svg#icon-node"></use>
+                </svg>
+                Node.js
+              </div>
             </div>
           </div>
         </div>
