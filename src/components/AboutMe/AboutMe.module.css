@@ -12,6 +12,7 @@
   font-size: 9px;
   color: #cfaf9f;
   margin-bottom: 18px;
+  font-family: var(--font-family);
 }
 
 .about_title {
@@ -19,6 +20,7 @@
   font-size: 34px;
   color: #3b3531;
   margin-bottom: 9px;
+  font-family: var(--second-family);
 }
 
 .about_description {
@@ -26,6 +28,7 @@
   font-weight: 400;
   font-size: 11px;
   color: #716963;
+  font-family: var(--font-family);
 }
 
 .about_description_two {
@@ -33,6 +36,7 @@
   font-weight: 400;
   font-size: 11px;
   color: #716963;
+  font-family: var(--font-family);
 }
 
 .about_btn {
@@ -46,9 +50,14 @@
 }
 
 .list_one {
-  border: 1px solid #e8ded6;
-  border-radius: 20px;
   background: #fff;
+}
+
+.list_one,
+.list_two,
+.list_three {
+  border-radius: 20px;
+  border: 1px solid #e8ded6;
   padding: 25px 20px;
   width: 100%;
 }
@@ -58,33 +67,36 @@
   font-size: 20px;
   color: #3b3531;
   margin-bottom: 9px;
+  font-family: var(--second-family);
 }
 
 .list_text {
   font-weight: 400;
   font-size: 10px;
   color: #716963;
+  font-family: var(--font-family);
 }
 
 .list_two {
-  border: 1px solid #e8ded6;
-  border-radius: 20px;
   background: #f4e5d9;
-  padding: 25px 20px;
-  width: 100%;
 }
 
 .list_three {
-  border: 1px solid #e8ded6;
-  border-radius: 20px;
   background: #e9f0eb;
-  padding: 25px 20px;
-  width: 100%;
+}
+
+.about_icon {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {
   .about_container {
     padding: 45px 0;
+  }
+
+  .about_description,
+  .about_description_two {
+    max-width: 330px;
   }
 
   .about_btn {
@@ -96,13 +108,26 @@
     gap: 15px;
   }
 
-  .list_one,.list_two, .list_
+  .list_one,
+  .list_two,
+  .list_three {
+    border-radius: 22px;
+    padding: 50px 20px 157px;
+  }
+
+  .list_title {
+    font-size: 21px;
+    margin-bottom: 20px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1240px) {
   .about_container {
     padding: 60px 0;
+    display: flex;
+    gap: 100px;
   }
+
   .about_text {
     font-size: 10px;
   }
@@ -115,11 +140,13 @@
   .about_description {
     margin-bottom: 26px;
     font-size: 13px;
+    width: 360px;
   }
 
   .about_description_two {
     margin-bottom: 64px;
     font-size: 13px;
+    width: 360px;
   }
 
   .about_btn {
@@ -132,5 +159,38 @@
     border-radius: 24px;
     padding: 17px;
     max-height: 48px;
+    font-family: var(--font-family);
+  }
+
+  .about_list {
+    gap: 30px;
+  }
+  .list_one,
+  .list_two,
+  .list_three {
+    padding: 25px 25px 185px;
+    border-radius: 24px;
+  }
+
+  .list_title {
+    font-size: 24px;
+  }
+
+  .list_text {
+    font-size: 13px;
+  }
+
+  .about_span {
+    display: block;
+  }
+
+  .about_icon {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    fill: #cfaf9f;
+    margin-bottom: 18px;
+    height: 25px;
+    width: 25px;
   }
 }

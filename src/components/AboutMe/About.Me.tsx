@@ -22,23 +22,41 @@ export default function AboutMe() {
           <div className={css.about_down}>
             <ul className={css.about_list}>
               <li className={css.list_one}>
-                <h3 className={css.list_title}>Web Development</h3>
+                <svg className={css.about_icon}>
+                  <use href="/sprite.svg#icon-untitled"></use>
+                </svg>
+                <h3 className={css.list_title}>
+                  Web <span className={css.about_span}>Development</span>
+                </h3>
                 <p className={css.list_text}>
-                  Short description about this area of work.
+                  Building responsive and modern web applications with React,
+                  Next.js and Node.js.
                 </p>
               </li>
 
               <li className={css.list_two}>
-                <h3 className={css.list_title}>AI Automation</h3>
+                <svg className={css.about_icon}>
+                  <use href="/sprite.svg#icon-1"></use>
+                </svg>
+                <h3 className={css.list_title}>
+                  AI <span className={css.about_span}>Automation</span>
+                </h3>
                 <p className={css.list_text}>
-                  Short description about this area of work.
+                  Creating AI workflows and smart automations with n8n, OpenAI
+                  and more.
                 </p>
               </li>
 
               <li className={css.list_three}>
-                <h3 className={css.list_title}>Problem Solving</h3>
+                <svg className={css.about_icon}>
+                  <use href="/sprite.svg#icon-2"></use>
+                </svg>
+                <h3 className={css.list_title}>
+                  Problem <span className={css.about_span}>Solving</span>
+                </h3>
                 <p className={css.list_text}>
-                  Short description about this area of work.
+                  I love challenges and enjoy turning complex problems into
+                  simple solutions.
                 </p>
               </li>
             </ul>
