@@ -20,9 +20,8 @@
     d="M16 1C16 1 17.1 10.9 21.2 14.2C24.1 16.5 31 16 31 16C31 16 24.1 15.5 21.2 17.8C17.1 21.1 16 31 16 31C16 31 14.9 21.1 10.8 17.8C7.9 15.5 1 16 1 16C1 16 7.9 16.5 10.8 14.2C14.9 10.9 16 1 16 1Z"
   />
 </symbol>
-<symbol id="icon-menu" viewBox="0 0 44 32">
-<path d="M0 6h28v6h-28v-6zM0 14h28v6h-28v-6zM0 22h28v6h-28v-6z"></path>
-<path d="M31 14l6 6 6-6z"></path>
+<symbol id="icon-menu" viewBox="0 0 42 32">
+<path d="M-0 6.038v-6.038h40.474v6.038h-40.474zM-0 18.442v-6.038h40.474v6.038h-40.474zM-0 30.845v-6.038h40.474v6.038h-40.474z"></path>
 </symbol>
 <symbol id="icon-x" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.5" d="M24 8l-16 16"></path>

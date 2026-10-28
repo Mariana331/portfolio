@@ -66,6 +66,7 @@
   border-radius: 999px;
   border: none;
   height: 46px;
+  padding: 13px;
   font-family: var(--font-family);
 }
 
@@ -100,7 +101,7 @@
 }
 
 .burger {
-  fill: #3b3531;
+  fill: #b89482;
 }
 .nav {
   display: none;

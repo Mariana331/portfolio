@@ -17,7 +17,7 @@ export default function Header() {
   const isContacts = location.pathname === "/contacts";
 
   return (
-    <div className={css.header}>
+    <section className={css.header}>
       <div className="container">
         <div className={css.header_container}>
           <div className={css.logo}>
@@ -44,7 +44,7 @@ export default function Header() {
                 className={`${css.nav_item} ${isProducts ? css.active : ""} `}
               >
                 <Link className={css.nav_link} to="/products">
-                  Products
+                  Projects
                 </Link>
               </li>
               <li className={`${css.nav_item} ${isSkills ? css.active : ""} `}>
@@ -93,6 +93,6 @@ export default function Header() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

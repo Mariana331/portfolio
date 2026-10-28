@@ -1,0 +1,137 @@
+.projects_container {
+  padding: 40px 0 80px;
+}
+
+.projects_text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 9px;
+  color: #cfaf9f;
+  margin-bottom: 18px;
+}
+
+.projects_title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 34px;
+  color: #3b3531;
+  margin-bottom: 19px;
+}
+
+.projects_list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project_item_one {
+  border-radius: 22px;
+  background: #e0edf0;
+  width: 100%;
+  padding: 25px 20px;
+}
+
+.item_title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 28px;
+  color: #3b3531;
+  margin-bottom: 6px;
+}
+
+.item_text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 11px;
+  color: #716963;
+  margin-bottom: 25px;
+}
+
+.item_link {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 11px;
+  text-align: center;
+  color: #3b3531;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #cfaf9f;
+  border-radius: 22px;
+  max-height: 44px;
+  transition:
+    transform 0.25s ease,
+    background-color 0.25s ease;
+}
+
+.item_link:hover {
+  background: #f3ece5;
+  transform: translateY(-3px);
+}
+
+.project_item_two,
+.project_item_three,
+.project_item_four,
+.project_item_five {
+  border: 1px solid #e8ded6;
+  border-radius: 20px;
+  padding: 24px 20px;
+  width: 100%;
+}
+
+.project_item_two {
+  background: #f4e5d9;
+}
+
+.project_item_three {
+  background: #e9f0eb;
+}
+
+.project_item_four {
+  background: #fff;
+}
+.project_item_five {
+  background: #e0edf0;
+}
+
+@media screen and(min-width:768px) {
+  .projects_container {
+    padding: 45px 0 35px;
+  }
+
+  .projects_title {
+    font-size: 36px;
+    margin-bottom: 16px;
+  }
+
+  .project_item_one {
+    padding: 30px 23px;
+  }
+}
+
+@media screen and(min-width:1240px) {
+  .projects_container {
+    padding: 54px 0 230px;
+  }
+
+  .projects_text {
+    font-size: 10px;
+  }
+
+  .projects_title {
+    font-size: 42px;
+    margin-bottom: 23px;
+  }
+
+  .project_item_one {
+    padding: 30px 28px;
+    max-width: 750px;
+  }
+
+  .item_title {
+    font-size: 32px;
+  }
+
+  .item_link {
+    font-size: 12px;
+  }
+}

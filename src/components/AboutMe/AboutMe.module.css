@@ -160,6 +160,14 @@
     padding: 17px;
     max-height: 48px;
     font-family: var(--font-family);
+    transition:
+      transform 0.25s ease,
+      background-color 0.25s ease;
+  }
+
+  .about_btn:hover {
+    background: #e6d0c3;
+    transform: translateY(-3px);
   }
 
   .about_list {
