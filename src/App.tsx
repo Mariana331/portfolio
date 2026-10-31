@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import AboutMe from "./components/AboutMe/About.Me";
 import { Projects } from "./components/Projects/Projects";
+import TechStack from "./components/TechStack/TechStack";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <AboutMe />
       <Projects />
+      <TechStack />
     </>
   );
 }

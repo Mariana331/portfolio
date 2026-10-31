@@ -1,0 +1,136 @@
+.techStack {
+  background: #f9f7f2;
+}
+
+.techStack_container {
+  padding: 40px 0 160px;
+}
+
+.techStack_text {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 9px;
+  color: #cfaf9f;
+  margin-bottom: 18px;
+}
+
+.techStack_title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 34px;
+  color: #3b3531;
+  margin-bottom: 16px;
+}
+
+.techStack_list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 11px;
+  padding-bottom: 21px;
+}
+
+.techStack_item {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 9px;
+  text-align: center;
+  color: #5c524a;
+  background: #fffdf9;
+  border: 1px solid rgba(232, 219, 209, 0.8);
+  border-radius: 999px;
+  padding: 11px;
+  width: 170px;
+}
+
+.techStack_amount {
+  background: #f6ece3;
+  border: 1px solid #e8ded6;
+  border-radius: 22px;
+  max-width: 350px;
+  padding: 25px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.amount {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  color: #3b3531;
+  width: 170px;
+}
+
+.span_amount {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 9px;
+  text-align: center;
+  color: #716963;
+}
+
+@media screen and (min-width: 768px) {
+  .techStack_container {
+    padding: 45px 0 145px;
+  }
+
+  .techStack_title {
+    font-size: 36px;
+  }
+
+  .techStack_list {
+    column-gap: 20px;
+    row-gap: 14px;
+    padding-bottom: 33px;
+  }
+
+  .techStack_item {
+    width: 155px;
+  }
+
+  .techStack_amount {
+    max-width: 704px;
+    padding: 30px 0 58px;
+  }
+
+  .amount {
+    font-size: 32px;
+    width: 350px;
+  }
+}
+
+@media screen and (min-width: 1240px) {
+  .techStack_container {
+    padding: 54px 0 190px;
+  }
+
+  .techStack_text {
+    font-size: 10px;
+  }
+
+  .techStack_title {
+    font-size: 42px;
+    margin-bottom: 33px;
+  }
+
+  .techStack_list {
+    column-gap: 0;
+    row-gap: 0;
+    justify-content: space-between;
+    padding-bottom: 85px;
+  }
+
+  .techStack_item {
+    width: 135px;
+  }
+
+  .techStack_amount {
+    max-width: 1040px;
+    padding: 35px 0 51px;
+  }
+  .amount {
+    font-size: 38px;
+    width: 259px;
+  }
+}
