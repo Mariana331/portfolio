@@ -4,6 +4,7 @@ import Hero from "./components/Hero/Hero";
 import AboutMe from "./components/AboutMe/About.Me";
 import { Projects } from "./components/Projects/Projects";
 import TechStack from "./components/TechStack/TechStack";
+import Contacts from "./components/Contacts/Contacts";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <AboutMe />
       <Projects />
       <TechStack />
+      <Contacts />
     </>
   );
 }
